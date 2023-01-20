@@ -3,9 +3,15 @@
 // Array example: bankAccounts in /data/data.js
 // getClientWithNoMoney(bankAccounts) => ['Kevin', 'Jon']
 
+import { flatArraysData } from "../data/data"
+
 export function getClientWithNoMoney(array) {
   // Your code goes here...
-
+  let brokie = []
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].balance == 0) brokie.push(array[i].name)
+  }
+  return brokie
 }
 
 // === TEST YOURSELF ===

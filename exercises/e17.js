@@ -7,6 +7,12 @@
 
 export function doesArrayInclude(array, value) {
   // Your code goes here...
+for (let t = 0; t < array.length; t++) {
+  if (array[t] === value) {
+    return true
+  }
+}
+return false
 
 }
 
