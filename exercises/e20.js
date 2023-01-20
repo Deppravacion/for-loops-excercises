@@ -7,6 +7,24 @@
 
 export function separateNamesWithAFromRest(array) {
   // Your code goes here...
+  let theAgroup = []
+  let theNilGroup = []
+
+  for (let i = 0; i < array.length; i++) {
+    const testArr = []
+    let theBool = false
+    for ( let j = 0; j < array[i].length; j ++) {
+        if (array[i][j] === 'a') {
+            theBool = true
+            theAgroup.push(array[i])
+        } 
+
+        
+    }
+    if (theBool == false) theNilGroup.push(array[i])
+ 
+  }
+  return [theAgroup, theNilGroup]
 
 }
 

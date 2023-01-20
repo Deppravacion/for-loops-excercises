@@ -6,7 +6,19 @@
 
 
   
-export function joinToString(array, separator) {}
+export function joinToString(array, separator) {
+  //
+  let joinThis = ''
+  for (let f = 0; f < array.length; f++) {
+    joinThis += array[f]
+    if (f < array.length - 1) {
+      joinThis += separator
+    }
+  }
+  return joinThis
+
+
+}
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-18"
