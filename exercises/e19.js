@@ -7,9 +7,9 @@
 export function reverseArray(array) {
   // Your code goes here...
   let reversed = []
-  for (let i = 0; i < array.length; i ++) {
+  for (let i = 1; i <= array.length; i ++) {
     let k  = (array.length - 1)  - i
-    reversed.push(array[k])
+    reversed.push(array[array.length - i])
   }
   return reversed
 }
